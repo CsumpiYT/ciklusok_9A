@@ -17,3 +17,8 @@ if __name__ == '__main__':
 
     atlag = sum / darabszam
     print('átlag: ' + str(atlag))
+
+    for gyemant in diamonds.iterows():
+        carat = gyemant[1]['carat']
+        if carat > atlag:
+            print(gyemant)
